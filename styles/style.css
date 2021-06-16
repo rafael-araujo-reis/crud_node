@@ -23,14 +23,6 @@
   --yellow-light: rgb(255, 244, 181);
 }
 
-/* body {
-  display       : flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items    : stretch;
-} */
-
 main {
   max-width: 1400px;
   position : relative;
