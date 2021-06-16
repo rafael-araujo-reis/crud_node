@@ -256,7 +256,8 @@ section {
   align-items    : center;
 
   position : absolute;
-  top      : -2.5rem;
+  top      : 0;
+  transform: translateY(-50%);
   left     : 2rem;
   font-size: 2rem;
 
