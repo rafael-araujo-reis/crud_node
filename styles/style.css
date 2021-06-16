@@ -32,7 +32,7 @@ main {
 
 header {
   background-color: var(--blue-water);
-  padding         : 2rem 1rem;
+  padding         : 1.5rem 1rem;
 
   display        : flex;
   flex-direction : column;
@@ -89,12 +89,11 @@ header ul li {
 }
 
 form {
-
   background-color: var(--white);
   max-width       : 500px;
 
   flex-direction: column;
-  padding       : 2rem;
+  padding       : 1.5rem;
 
   box-shadow   : 1px 2px 8px var(--gray);
   border-radius: 0.5rem;
@@ -129,7 +128,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 
   gap    : 2rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .list {
@@ -141,8 +140,7 @@ section {
   padding    : 2rem;
   align-items: center;
 
-  border-radius: 1rem;
-  box-shadow   : 1px 2px 8px var(--gray);
+  box-shadow: 0px 0px 2px var(--gray);
 
   position: relative;
 
@@ -176,15 +174,6 @@ section {
   opacity: 1;
 }
 
-
-.item:first-child {
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.item:last-child {
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
 .item:nth-child(odd) {
   color           : var(--white);
   background-color: var(--yellow);
@@ -196,10 +185,8 @@ section {
 }
 
 .date-item {
-  border-radius: 0.5rem;
-  padding      : 0.4rem;
-  font-size    : 0.8rem;
-  font-weight  : 600;
+  font-size  : 0.8rem;
+  font-weight: 600;
 }
 
 .description-item {
@@ -247,9 +234,9 @@ section {
 }
 
 .add {
-  width        : 50px;
-  height       : 50px;
-  border-radius: 5rem;
+  width        : 60px;
+  height       : 60px;
+  border-radius: 6rem;
 
   display        : flex;
   justify-content: center;
@@ -259,12 +246,12 @@ section {
   top      : 0;
   transform: translateY(-50%);
   left     : 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
 
   background-color: var(--green);
   box-shadow      : 1px 2px 8px var(--gray);
 
-  transition: 0.5s width;
+  transition: 0.7s width;
   cursor    : pointer;
 }
 
