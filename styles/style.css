@@ -269,12 +269,12 @@ section {
   background-color: var(--green);
   box-shadow      : 1px 2px 8px var(--gray);
 
-  transition: 0.7s width;
+  transition: 0.7s background-color;
   cursor    : pointer;
 }
 
 .add:hover {
-  width: 25%;
+  background-color: var(--currency);
 }
 
 .add span {
