@@ -61,6 +61,9 @@ app.use(express.static(__dirname));
 
 app.set('view engine', 'ejs');
 
+/****************************
+ * Routers
+ ****************************/
 app.get('/', (req, res) => {
   res.render('pages/index');
 });
