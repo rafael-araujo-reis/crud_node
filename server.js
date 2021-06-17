@@ -58,7 +58,6 @@ let listItens = [
  * Application config
  ****************************/
 app.use(express.static(__dirname));
-
 app.set('view engine', 'ejs');
 
 /****************************
