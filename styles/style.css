@@ -73,6 +73,10 @@ h1 {
   color: var(--title)
 }
 
+header ul a {
+  color: var(--white)
+}
+
 header ul {
   display   : flex;
   margin-top: 1rem;
