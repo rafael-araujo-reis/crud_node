@@ -65,7 +65,15 @@ app.set('view engine', 'ejs');
  * Routers
  ****************************/
 app.get('/', (req, res) => {
-  res.render('pages/index');
+  res.render('pages/index', { page: 'Home', list: listItens });
+});
+
+app.get('/about', (req, res) => {
+  res.render('pages/about', { page: 'Sobre' });
+});
+
+app.get('/contact', (req, res) => {
+  res.render('pages/contact', { page: 'Contato' });
 });
 
 app.listen(port);
