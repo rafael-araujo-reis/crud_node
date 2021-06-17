@@ -6,81 +6,56 @@
   <body>
     <%- include('../partials/header') %>
 
-  <main>
-    <div class="modal">
-      <form>
-        <input type="text" placeholder="Informe o produto">
-        <textarea name="" id="" placeholder="Descrição do produto"></textarea>
+      <main>
+        <div class="modal">
+          <form>
+            <input type="text" placeholder="Informe o produto">
+            <textarea name="" id="" placeholder="Descrição do produto"></textarea>
 
-        <input type="number" name="" id="" placeholder="R$00,00">
-        <div class="buttons">
+            <input type="number" name="" id="" placeholder="R$00,00">
+            <div class="buttons">
 
-          <button class="btn save">Salvar</button>
-          <a href="#" class="btn cancel">Cancelar</a>
+              <button class="btn save">Salvar</button>
+              <a href="#" class="btn cancel">Cancelar</a>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
 
-    <h1 class="title">Lista de Produtos</h1>
+        <h1 class="title">Lista de Produtos</h1>
 
-    <a href="">
-      <div class="add"><span>+</span></div>
-    </a>
+        <a href="">
+          <div class="add"><span>+</span></div>
+        </a>
 
-    <section>
-      <div>
-        <ul class="list">
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-          <li class="item">
-            <span class="date-item">02.05.21</span>
-            <span class="description-item">Livros estudos<span>
-          </li>
-        </ul>
-      </div>
+        <section>
+          <div>
+            <ul class="list">
+              <% list.forEach((item)=>{ %>
+                <li class="item">
+                  <span class="date-item">
+                    <%= item.date %>
+                  </span>
+                  <span class="description-item">
+                    <%= item.title %>
+                      <span>
+                </li>
+                <% });%>
+            </ul>
+          </div>
 
-      <div id="product">
-        <h2 class="title">Cadeira Gamer</h2>
-        <h3 class="currency">R$1.000,00</h3>
+          <div id="product">
+            <h2 class="title">Cadeira Gamer</h2>
+            <h3 class="currency">R$1.000,00</h3>
 
-        <p class="description">Cadeira gamer vermelha da marca Fortrek. Compra realizada no Mercado Livre parcelado.</p>
-        <div class="buttons">
-          <button class="btn edit">Editar</button>
-          <button class="btn delete">Excluir</button>
-        </div>
-      </div>
-    </section>
-  </main>
+            <p class="description">Cadeira gamer vermelha da marca Fortrek. Compra realizada no Mercado Livre parcelado.
+            </p>
+            <div class="buttons">
+              <button class="btn edit">Editar</button>
+              <button class="btn delete">Excluir</button>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <%- include('../partials/footer') %>
   </body>
